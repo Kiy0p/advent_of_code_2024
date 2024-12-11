@@ -15,10 +15,10 @@ fun main() {
     lists.first.sortDescending()
     lists.second.sortDescending()
 
-    var result1 = 0
-    lists.first.forEachIndexed{ index, number -> result1 += abs(number - lists.second[index]) }
+    var numberOfLocations = 0
+    lists.first.forEachIndexed{ index, number -> numberOfLocations += abs(number - lists.second[index]) }
 
-    println("part 1 : " + result1)
+    println("part 1 : " + numberOfLocations)
 
     /* PART 2 */
 
